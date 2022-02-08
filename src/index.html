@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <form>
+            <table>
+                <tr>
+                    <td><label for="productid">Product Id</label></td>
+                    <td> <input autocomplete="off" name="productid" id="productid" type=" number" /></td>
+                </tr>
+                <tr>
+                    <td><label for="productname">Product Name</label></td>
+                    <td> <input autocomplete="off" name="productname" id="productname" type=" text" /></td>
+                </tr>
+                <tr>
+                    <td><label for="productprice">Product Price</label></td>
+                    <td><input autocomplete="off" name="productprice" id="productprice" type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="ADD PRODUCT" onclick="start()"> </td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="listtable">
+        <table id="olisttable">
+            <tr>
+                <th class="parse_right">Product ID</th>
+                <th> Product Name </th>
+                <th>Product Price</th>
+            </tr>
+
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
